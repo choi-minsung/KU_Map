@@ -1,0 +1,14 @@
+{
+  "resourceName": "s3ea4adc1d",
+  "policyUUID": "ea4adc1d",
+  "bucketName": "kumap",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}

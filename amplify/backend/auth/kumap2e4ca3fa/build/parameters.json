@@ -1,0 +1,69 @@
+{
+  "identityPoolName": "kumap2e4ca3fa_identitypool_2e4ca3fa",
+  "allowUnauthenticatedIdentities": false,
+  "resourceNameTruncated": "kumap2e4ca3fa",
+  "userPoolName": "kumap2e4ca3fa_userpool_2e4ca3fa",
+  "autoVerifiedAttributes": [
+    "email"
+  ],
+  "mfaConfiguration": "OPTIONAL",
+  "mfaTypes": [
+    "SMS Text Message"
+  ],
+  "smsAuthenticationMessage": "Your authentication code is {####}",
+  "smsVerificationMessage": "Your verification code is {####}",
+  "emailVerificationSubject": "Your verification code",
+  "emailVerificationMessage": "Your verification code is {####}",
+  "defaultPasswordPolicy": false,
+  "passwordPolicyMinLength": 8,
+  "passwordPolicyCharacters": [],
+  "requiredAttributes": [
+    "email"
+  ],
+  "aliasAttributes": [],
+  "userpoolClientGenerateSecret": false,
+  "userpoolClientRefreshTokenValidity": 30,
+  "userpoolClientWriteAttributes": [
+    "email"
+  ],
+  "userpoolClientReadAttributes": [
+    "email"
+  ],
+  "userpoolClientLambdaRole": "kumap22e4ca3fa_userpoolclient_lambda_role",
+  "userpoolClientSetAttributes": false,
+  "sharedId": "2e4ca3fa",
+  "resourceName": "kumap2e4ca3fa",
+  "authSelections": "identityPoolAndUserPool",
+  "useDefault": "defaultSocial",
+  "hostedUI": true,
+  "userPoolGroupList": [],
+  "serviceName": "Cognito",
+  "usernameCaseSensitive": false,
+  "useEnabledMfas": true,
+  "authRoleArn": {
+    "Fn::GetAtt": [
+      "AuthRole",
+      "Arn"
+    ]
+  },
+  "unauthRoleArn": {
+    "Fn::GetAtt": [
+      "UnauthRole",
+      "Arn"
+    ]
+  },
+  "breakCircularDependency": true,
+  "dependsOn": [],
+  "userPoolGroups": false,
+  "adminQueries": false,
+  "triggers": "{}",
+  "parentStack": {
+    "Ref": "AWS::StackId"
+  },
+  "permissions": [],
+  "hostedUIDomainName": "kumap7d615d5b-7d615d5b",
+  "authProvidersUserPool": [],
+  "hostedUIProviderMeta": "[]",
+  "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"https://localhost:3000/\"],\"LogoutURLs\":[\"https://localhost:3000/\"]}",
+  "authProviders": []
+}

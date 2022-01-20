@@ -1,0 +1,101 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-kumap-dev-184000-authRole",
+      "UnauthRoleArn": "arn:aws:iam::972746818697:role/amplify-kumap-dev-184000-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::972746818697:role/amplify-kumap-dev-184000-authRole",
+      "Region": "ap-northeast-2",
+      "DeploymentBucketName": "amplify-kumap-dev-184000-deployment",
+      "UnauthRoleName": "amplify-kumap-dev-184000-unauthRole",
+      "StackName": "amplify-kumap-dev-184000",
+      "StackId": "arn:aws:cloudformation:ap-northeast-2:972746818697:stack/amplify-kumap-dev-184000/72cd5450-7779-11ec-9ff9-06c565c7c590",
+      "AmplifyAppId": "d6x5rea2mikp8"
+    }
+  },
+  "auth": {
+    "kumap2e4ca3fa": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OPTIONAL",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "lastPushTimeStamp": "2022-01-19T13:00:44.074Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-kumap-dev-184000-deployment/amplify-cfn-templates/auth/kumap2e4ca3fa-cloudformation-template.json",
+        "logicalId": "authkumap2e4ca3fa"
+      },
+      "output": {
+        "CreatedSNSRole": "arn:aws:iam::972746818697:role/sns2e4ca3fa184000-dev",
+        "UserPoolId": "ap-northeast-2_ixXKh4lN8",
+        "AppClientIDWeb": "5fksuccf9r7c339d2ov0liglpl",
+        "AppClientID": "2bu66sqjhttavcvv7t08metnmm",
+        "IdentityPoolId": "ap-northeast-2:73ee628b-5534-413b-b0f5-b5a6d7d22853",
+        "UserPoolArn": "arn:aws:cognito-idp:ap-northeast-2:972746818697:userpool/ap-northeast-2_ixXKh4lN8",
+        "IdentityPoolName": "kumap2e4ca3fa_identitypool_2e4ca3fa__dev",
+        "UserPoolName": "kumap2e4ca3fa_userpool_2e4ca3fa",
+        "HostedUIDomain": "kumap7d615d5b-7d615d5b-dev",
+        "OAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"https://localhost:3000/\"],\"LogoutURLs\":[\"https://localhost:3000/\"]}"
+      },
+      "lastPushDirHash": "Y+ZYLsyNWaR/wlkWy0WAkfJNVe4="
+    }
+  },
+  "api": {
+    "kumap": {
+      "service": "AppSync",
+      "providerPlugin": "awscloudformation",
+      "output": {
+        "authConfig": {
+          "defaultAuthentication": {
+            "authenticationType": "AMAZON_COGNITO_USER_POOLS",
+            "userPoolConfig": {
+              "userPoolId": "authkumap2e4ca3fa"
+            }
+          },
+          "additionalAuthenticationProviders": []
+        },
+        "GraphQLAPIIdOutput": "jycgk34ejrex5nmkdlulrxfj2a",
+        "GraphQLAPIEndpointOutput": "https://pi5ancjdwrccfitucksyj3zrw4.appsync-api.ap-northeast-2.amazonaws.com/graphql"
+      },
+      "lastPushTimeStamp": "2022-01-19T13:00:44.076Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-kumap-dev-184000-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "logicalId": "apikumap"
+      },
+      "lastPushDirHash": "unM7+Xyb9YSSwXJMp8RC0FbNQzA="
+    }
+  },
+  "storage": {
+    "s3ea4adc1d": {
+      "service": "S3",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "lastPushTimeStamp": "2022-01-19T13:00:44.091Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-kumap-dev-184000-deployment/amplify-cfn-templates/storage/cloudformation-template.json",
+        "logicalId": "storages3ea4adc1d"
+      },
+      "output": {
+        "BucketName": "kumap184000-dev",
+        "Region": "ap-northeast-2"
+      },
+      "lastPushDirHash": "wyBWT7RqSuRkOzi5xI1Avb5rsTU="
+    }
+  }
+}

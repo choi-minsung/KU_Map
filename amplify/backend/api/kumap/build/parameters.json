@@ -1,0 +1,13 @@
+{
+    "AppSyncApiName": "kumap",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": false,
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authkumap2e4ca3fa",
+            "Outputs.UserPoolId"
+        ]
+    },
+    "S3DeploymentBucket": "amplify-kumap-dev-184000-deployment",
+    "S3DeploymentRootKey": "amplify-appsync-files/4bcf00cd8247a5a51241f1041ccaa1ba20d2efa1"
+}

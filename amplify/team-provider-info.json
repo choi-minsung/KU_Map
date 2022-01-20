@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-kumap-dev-184000-authRole",
+      "UnauthRoleArn": "arn:aws:iam::972746818697:role/amplify-kumap-dev-184000-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::972746818697:role/amplify-kumap-dev-184000-authRole",
+      "Region": "ap-northeast-2",
+      "DeploymentBucketName": "amplify-kumap-dev-184000-deployment",
+      "UnauthRoleName": "amplify-kumap-dev-184000-unauthRole",
+      "StackName": "amplify-kumap-dev-184000",
+      "StackId": "arn:aws:cloudformation:ap-northeast-2:972746818697:stack/amplify-kumap-dev-184000/72cd5450-7779-11ec-9ff9-06c565c7c590",
+      "AmplifyAppId": "d6x5rea2mikp8"
+    },
+    "categories": {
+      "auth": {
+        "kumap2e4ca3fa": {}
+      }
+    }
+  }
+}

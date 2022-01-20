@@ -1,0 +1,70 @@
+{
+    "UserAgent": "aws-amplify-cli/0.1.0",
+    "Version": "0.1.0",
+    "IdentityManager": {
+        "Default": {}
+    },
+    "CredentialsProvider": {
+        "CognitoIdentity": {
+            "Default": {
+                "PoolId": "ap-northeast-2:73ee628b-5534-413b-b0f5-b5a6d7d22853",
+                "Region": "ap-northeast-2"
+            }
+        }
+    },
+    "CognitoUserPool": {
+        "Default": {
+            "PoolId": "ap-northeast-2_ixXKh4lN8",
+            "AppClientId": "2bu66sqjhttavcvv7t08metnmm",
+            "Region": "ap-northeast-2"
+        }
+    },
+    "Auth": {
+        "Default": {
+            "OAuth": {
+                "WebDomain": "kumap7d615d5b-7d615d5b-dev.auth.ap-northeast-2.amazoncognito.com",
+                "AppClientId": "2bu66sqjhttavcvv7t08metnmm",
+                "SignInRedirectURI": "https://localhost:3000/",
+                "SignOutRedirectURI": "https://localhost:3000/",
+                "Scopes": [
+                    "phone",
+                    "email",
+                    "openid",
+                    "profile",
+                    "aws.cognito.signin.user.admin"
+                ]
+            },
+            "authenticationFlowType": "USER_SRP_AUTH",
+            "socialProviders": [],
+            "usernameAttributes": [],
+            "signupAttributes": [
+                "EMAIL"
+            ],
+            "passwordProtectionSettings": {
+                "passwordPolicyMinLength": 8,
+                "passwordPolicyCharacters": []
+            },
+            "mfaConfiguration": "OPTIONAL",
+            "mfaTypes": [
+                "SMS"
+            ],
+            "verificationMechanisms": [
+                "EMAIL"
+            ]
+        }
+    },
+    "AppSync": {
+        "Default": {
+            "ApiUrl": "https://pi5ancjdwrccfitucksyj3zrw4.appsync-api.ap-northeast-2.amazonaws.com/graphql",
+            "Region": "ap-northeast-2",
+            "AuthMode": "AMAZON_COGNITO_USER_POOLS",
+            "ClientDatabasePrefix": "kumap_AMAZON_COGNITO_USER_POOLS"
+        }
+    },
+    "S3TransferUtility": {
+        "Default": {
+            "Bucket": "kumap184000-dev",
+            "Region": "ap-northeast-2"
+        }
+    }
+}
